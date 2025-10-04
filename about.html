@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Amanda Ahanonu — About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- same CSS files used on all pages -->
+  <link rel="stylesheet" href="styles-mobile.css">
+  <link rel="stylesheet" href="styles-tablet.css" media="(min-width: 600px)">
+  <link rel="stylesheet" href="styles-desktop.css" media="(min-width: 750px)">
+</head>
+<body>
+  <!-- header + nav -->
+  <header id="banner" role="banner">
+    <div id="wrapper-inner">
+      <h1 class="site-title"><a href="index.html">Amanda Ahanonu</a></h1>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- page body -->
+  <div id="wrapper">
+    <main id="content" class="float-layout clear" role="main">
+      <aside id="left-column" aria-label="Sidebar">
+  <section class="box pink-box">
+    <h2> Menu</h2>
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#intro-video">Intro Video</a></li>
+    </ul>
+  </section>
+</aside>
+
+      <article id="right-column">
+        <section id="about-me" class="box">
+          <h2>About Me</h2>
+          <!-- I have put my headshot in here -->
+          <img src="images/me.png.PNG" alt="This is me, Nice to meet you!">
+          <p>Hi, I’m Amanda Ahanonu. I’m a tech enthusiast, creative strategist, and nonprofit founder passionate about building solutions that create real impact.
+
+I’m currently studying Networking and IT Security at Ontario Tech University, and I’ve worked across product design, customer success, and community leadership. From designing digital products to launching The Pink Sun Foundation, my work blends tech, empathy, and purpose.
+
+Here in my portfolio, you’ll find projects that reflect who I am—someone who loves to solve problems, tell stories through design, and empower people through technology and service.
+
+Thanks for stopping by. Let’s build something meaningful together!
+        </section>
+
+        <section id="intro-video" class="box">
+  <h2>My Intro Video (45–60s)</h2>
+  <video controls preload="metadata" poster="images/video-poster.jpg">
+    <source src="video/intrvid.mp4" type="video/mp4">
+    Sorry, your browser doesn’t support embedded videos.
+  </video>
+</section>
+
+      </article>
+    </main>
+  </div>
+
+  <!-- footer -->
+  <footer id="site-footer">
+    <div class="footer-strip">
+      <div id="wrapper-inner">
+      <p>© <span id="year"></span> Amanda Ahanonu · <a href="mailto:amanda.ahaonu@ontariotechu.net">amanda.ahanonu@ontariotechu.net</a></p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
+=

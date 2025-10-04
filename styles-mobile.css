@@ -1,0 +1,45 @@
+/* MOBILE — default, no Flexbox */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body { margin:0; font-family: system-ui, Arial, sans-serif; line-height:1.5; color:#0f172a; background:#ffffff; }
+a { color:#2563eb; }
+a:focus, button:focus, input:focus, textarea:focus { outline:2px solid #2563eb; outline-offset:2px; }
+
+#wrapper { width: 92%; max-width: 1100px; margin: 0 auto; }
+#banner, #site-footer { padding: 12px 0; }
+#banner .site-title a { text-decoration:none; color:#0f172a; }
+
+nav a { margin-right: 12px; text-decoration:none; }
+nav a:hover { text-decoration:underline; }
+
+.hero { padding: 32px; background: linear-gradient(180deg, #ffe3f1, #ffffff); border-radius: 10px; }
+
+.box { border:1px solid #e5e7eb; background:#fff; padding:16px; border-radius:10px; margin-bottom:12px; }
+.card { border:1px solid #e5e7eb; padding:16px; border-radius:10px; margin-bottom:12px; transition: transform .2s ease; }
+.card:hover { transform: scale(1.02); }
+
+img, video { max-width:100%; height:auto; display:block; }
+
+.field { margin-bottom:12px; }
+label { display:block; margin-bottom:4px; }
+input, textarea { width:100%; padding:10px; border:1px solid #cbd5e1; border-radius:6px; }
+button { padding:10px 16px; border:0; border-radius:8px; background:#ec4899; color:white; cursor:pointer; }
+button:hover { opacity:0.95; }
+
+.footer-strip { background: linear-gradient(135deg, #ffd1e8, #e3f0ff); padding: 12px 0; }
+
+.float-layout {}
+.clear::after { content:""; display:block; clear:both; }
+
+#left-column, #right-column { width: 100%; }
+
+
+/* a subtle pink gradient instead of solid pink */
+.pink-box{
+  background: linear-gradient(180deg, #ffe3f1, #fff0f7);
+}
+
+/* keep text readable on pink */
+.pink-box h2{ color: #0f172a; }     /* dark heading */
+.pink-box a{ color: #1d4ed8; }      /* links stay blue */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Amanda Ahanonu — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles-mobile.css">
+  <link rel="stylesheet" href="styles-tablet.css" media="(min-width: 600px)">
+  <link rel="stylesheet" href="styles-desktop.css" media="(min-width: 992px)">
+
+</head>
+<body>
+<header id="banner" role="banner">
+  <div id="wrapper-inner">
+    <h1 class="site-title"><a href="index.html">Amanda Ahanonu</a></h1>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="wrapper">
+  <main id="content" class="float-layout clear" role="main">
+    <aside id="left-column">
+      <section class="box">
+        <h2>Skills used in projects</h2>
+        <p>Networking | Python | CSS | User Experience Design | User Interface Design | Collaborative Design | Project Management | Packet Tracer </p>
+      </section>
+    </aside>
+
+    <article id="right-column">
+      <section class="box">
+        <h2>Projects</h2>
+
+        <section class="project card">
+          <h3>Networking Projects </h3>
+          <p>Used cisco packet tracer to configured EIGRP/OSPF and test reachability. Focused on subnetting and building resilient topologies.</p>
+        </section>
+
+        <section class="project card">
+          <h3>Object Oriented Programming Python Storefront</h3>
+          <p>Built a mini online mart &amp; This project included pricing, images of products and replicated an online shopping experience for gadgets.</p>
+        </section>
+
+        <section class="project card">
+          <h3>The Pink Sun Empowerment Foundation Website (Using WordPress/Divi)</h3>
+          <p>This is a multi-page website with different pages that include the description of the foundation, what they do, how to get involved and also a donation flow and basic SEO optimizations. It can be accessed on through this link: <www class="thepinksunfoundation org"></www></p>
+        </section>
+
+
+      </section>
+    </article>
+  </main>
+</div>
+<footer id="site-footer">
+  <div class="footer-strip">
+    <div id="wrapper-inner">
+      <p>© <span id="year"></span> Amanda Ahanonu · <a href="amanda.ahanonu@ontariotechu.net">amanda.ahanonu@ontariotechu.net</a></p>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+</body>
+</html>

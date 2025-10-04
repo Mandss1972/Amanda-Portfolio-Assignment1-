@@ -1,0 +1,13 @@
+/* TABLET ≥ 600px */
+body { font-size: 17px; }
+nav a { margin-right: 16px; }
+/* Pink variant for any .box */
+.pink-box{
+  background: #ffe3f1;              /* soft pink fill */
+  border-color: #f9c2da;            /* matching border */
+}
+
+/* a subtle pink gradient instead of a solid pink */
+.pink-box{
+  background: linear-gradient(180deg, #ffe3f1, #fff0f7);
+}

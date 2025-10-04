@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Amanda Ahanonu — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles-mobile.css">
+  <link rel="stylesheet" href="styles-tablet.css" media="(min-width: 600px)">
+  <link rel="stylesheet" href="styles-desktop.css" media="(min-width: 992px)">
+
+</head>
+<body>
+<header id="banner" role="banner">
+  <div id="wrapper-inner">
+    <h1 class="site-title"><a href="index.html">Amanda Ahanonu</a></h1>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- the part that contains the contact details to be extracted-->
+
+<div id="wrapper">
+  <main id="content" class="float-layout clear" role="main">
+    <aside id="left-column">
+      <section class="box">
+        <h2>Contact Info</h2>
+        <p>Email: <a href="mailto:amanda.ahanonu@ontariotechu.net">amanda.ahanonu@ontariotechu.net</a></p>
+      </section>
+    </aside>
+
+    <article id="right-column">
+      <section class="box">
+        <h2>Contact Me</h2>
+        <form action="#" method="post" novalidate aria-describedby="form-help">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" required minlength="2" maxlength="60">
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Cell No.</label>
+            <input id="phone" name="phone" type="tel" required pattern="^\d{10}$" placeholder="1234567890">
+          </div>
+
+          <div class="field">
+            <label for="msg">Comments</label>
+            <textarea id="msg" name="msg" required minlength="10" maxlength="1000"></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+          <p id="form-help">All fields are required. Phone must be 10 digits.</p>
+        </form>
+      </section>
+    </article>
+  </main>
+</div>
+<footer id="site-footer">
+  <div class="footer-strip">
+    <div id="wrapper-inner">
+      <p>© <span id="year"></span> Amanda Ahanonu · <a href="mailto:amanda.ahanonu@ontariotechu.net">amanda.ahanonu@ontariotechu.net</a></p>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+  <!-- Above are the footer details -->
+
+</body>
+</html>

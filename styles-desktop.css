@@ -1,0 +1,7 @@
+/* DESKTOP ≥ 992px — floats & inline-block (no Flexbox) */
+#left-column  { float: left;  width: 32%; }
+#right-column { float: right; width: 66%; }
+
+.cards { font-size:0; }
+.cards .card { display:inline-block; vertical-align:top; width:48%; font-size:16px; }
+.cards .card + .card { margin-left:4%; }
